@@ -1,0 +1,61 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+import: 
+# Window config
+  - ~/.config/alacritty/window.yml
+# Font configuration
+  - ~/.config/alacritty/fonts.yml
+# Colors (Tomorrow Night)
+  - ~/.config/alacritty/themes.yml
+# Bell
+  - ~/.config/alacritty/bell.yml
+# selection:
+  - ~/.config/alacritty/selection.yml
+ # cursor
+  - ~/.config/alacritty/cursor.yml
+# Hints
+  - ~/.config/alacritty/hinds.yml
+#mouse:
+  - ~/.config/alacritty/mouse.yml
+# Key bindings
+  - ~/.config/alacritty/keyBindings.yml
+#debug:
+  - ~/.config/alacritty/debug.yml
+
+# Any items in the `env` entry below will be added as
+# environment variables. Some entries may override variables
+# set by alacritty itself.
+env:
+  # TERM variable
+  TERM: "xterm-256color" 
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+
+# Live config reload (changes require restart)
+#live_config_reload: true
+
+# Shell
+# You can set `shell.program` to the path of your favorite shell, e.g.
+# `/bin/fish`. Entries in `shell.args` are passed unmodified as arguments to the
+# shell.
+#
+# Default:
+#   - (Linux/BSD/macOS) `$SHELL` or the user's login shell, if `$SHELL` is unset
+#   - (Windows) powershell
+#shell:
+#  program: /bin/bash
+#  args:
+#    - --login
+
+# Startup directory
+#
+# Directory the shell is started in. If this is unset, or `None`, the working
+# directory of the parent process will be used.
+#working_directory: None
+
+# Send ESC (\x1b) before characters when alt is pressed.
+#alt_send_esc: true
+
+# Offer IPC using `alacritty msg` (unix only)
+#ipc_socket: true
